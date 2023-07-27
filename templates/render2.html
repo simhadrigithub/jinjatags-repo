@@ -17,6 +17,9 @@
         {%  if time > 10.30 %}
         <h3>class is started at {{time}}</h3>
         {% endif %}
+        {% if duration < '3hours' %}
+        <h1>django class duration time is {{duration}}</h1>
+        {% endif %}
     </center>
 </body>
 </html>
